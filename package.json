@@ -1,0 +1,77 @@
+{
+  "name": "Aurora",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite --open --host --force",
+    "start:prod": "vite --open --host --force --mode production",
+    "build": "vite build --sourcemap=true",
+    "build:analyze": "vite-bundle-visualizer",
+    "preview": "vite preview --open --port 8080",
+    "test": "vitest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lightningjs/l3-ui-theme-base": "^0.3.3",
+    "@lightningjs/renderer": "1.0.0",
+    "@lightningtv/solid": "1.0.0",
+    "@lightningtv/solid-ui": "^0.18.18",
+    "@lightningtv/vite-hex-transform": "^1.1.0",
+    "@solidjs/router": "^0.14.1",
+    "@storybook/test": "^8.2.3",
+    "@vitejs/plugin-legacy": "^5.4.1",
+    "ThunderJS": "github:rdkcentral/ThunderJS",
+    "solid-js": "^1.8.18"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@eslint/js": "^9.7.0",
+    "@lightningjs/vite-plugin-import-chunk-url": "^0.3.1",
+    "@storybook/addon-essentials": "^8.2.3",
+    "@storybook/addon-interactions": "^8.2.3",
+    "@storybook/addon-links": "^8.2.3",
+    "@storybook/blocks": "^8.2.3",
+    "@storybook/html": "^8.2.3",
+    "@storybook/html-vite": "^8.2.3",
+    "@storybook/testing-library": "^0.2.2",
+    "@vitest/browser": "^2.0.3",
+    "eslint": "^9.7.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "globals": "^15.8.0",
+    "husky": "^9.0.11",
+    "jsdom": "^24.1.0",
+    "lint-staged": "^15.2.7",
+    "playwright": "^1.45.1",
+    "prettier": "3.3.3",
+    "storybook": "^8.2.3",
+    "storybook-solidjs": "1.0.0-beta.2",
+    "storybook-solidjs-vite": "1.0.0-beta.2",
+    "typescript-eslint": "^7.16.1",
+    "vite": "^5.3.3",
+    "vite-bundle-visualizer": "^1.2.1",
+    "vite-plugin-cross-origin-isolation": "^0.1.6",
+    "vite-plugin-solid": "^2.10.2",
+    "vitest": "^2.0.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "jsxSingleQuote": true
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --check"
+    ],
+    "*.{js,cjs,md,jsx,json}": "prettier --write"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}

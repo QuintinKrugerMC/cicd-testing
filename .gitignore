@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+dist/
+# This project uses `pnpm` for package management
+package-lock.json
+
+*storybook.log
+
+.vscode/launch.json
