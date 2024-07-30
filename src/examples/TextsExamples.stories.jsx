@@ -7,7 +7,7 @@ export const Texts = () => {
   return (
     <Column style={styles.CenteredColumnContainerStyle}>
       <Text fontSize={30} fontWeight={400}>
-        fontWeight 400 : Hello world !
+        fontWeight 400 : Hello world Oh my goodness it took the update!
       </Text>
       <Text fontSize={30} fontWeight={500}>
         fontWeight 500 : Hello world !
